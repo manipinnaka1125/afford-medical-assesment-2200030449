@@ -1,16 +1,17 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import './App.css';
 import Stockapi from './components/Stockapi';
+
+
 
 function App() {
   return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Stockapi/>} />
 
-    <>
-    <div>stock charts</div>
-    <Stockapi/>
-    </>
-  
+      </Routes>
+    </Router>
   );
 }
-
 export default App;
